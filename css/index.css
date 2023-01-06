@@ -5,21 +5,26 @@
     margin: 0;
     border: 0;
 }
-a{
+
+a {
     cursor: pointer;
     text-decoration: none;
 }
-span{
+
+span {
     text-decoration: none;
 }
+
 ul,
 ol,
 li {
     list-style: none;
 }
+
 img {
     vertical-align: top;
 }
+
 h1,
 h2,
 h3,
@@ -29,9 +34,11 @@ h6 {
     font-weight: inherit;
     font-size: inherit;
 }
+
 h2 {
     color: #499A18
 }
+
 html,
 body {
     height: 100%;
@@ -41,7 +48,9 @@ body {
     background-color: #EDF2EC;
     background-size: 100%;
     scroll-behavior: smooth;
+    min-width: 1222px;
 }
+
 .wrapper {
     min-height: 100%;
     display: flex;
@@ -50,26 +59,29 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
 /*-------------HEADER-START-------------------------------------------- */
 header {
-        height: 134px;
-        display: block;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
+    height: 134px;
+    display: block;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 }
+
 .nav__container {
-        max-width: 1220px;
-        z-index: 50;
-        display: flex;
-        align-items: center;
-        overflow: hidden;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        padding: 42px 0px;
+    max-width: 1220px;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    padding: 42px 0px;
 }
+
 .logo__navbar {
-        padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .menu__navbar {
@@ -78,14 +90,17 @@ header {
     display: inline-flex;
     margin: 2px;
 }
+
 .menu__list {
     display: block;
     margin: 0;
     padding: 0;
 }
+
 .menu__item:not(:last-child) {
-    margin: 0px 46px 0px 0px;
+    margin: 0px 40px 0px 0px;
 }
+
 .menu__item {
     display: inline;
     flex-wrap: wrap;
@@ -93,26 +108,28 @@ header {
     font-style: normal;
     white-space: nowrap;
 }
+
 .menu__link {
     font-weight: 400;
     font-size: 16px;
     color: #010201;
     line-height: calc(50 / 16 * 100%);
     height: 100%;
-    background-image: url(../img/arrow1.svg);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 6px;
-    transition: 0.5s;
 }
-.menu__link:active:hover{
+
+.menu__link:hover {
     transition: 0.5s;
-    background-size: 100% 6px;
     color: #E06733;
-} 
+}
+
+.menu__link:active {
+    color: #E06733;
+}
+
 .orange {
     color: #E06733;
-} 
+}
+
 /*-------------HEADER-END-------------------------------------------- */
 /*-------------WELCOME-START-------------------------------------------- */
 .welcome {
@@ -121,18 +138,21 @@ header {
     margin-right: auto;
     justify-content: space-between;
 }
+
 .leafs__picture {
     margin: 62px 225px 62px 0px;
 }
-.welcome__container{
+
+.welcome__container {
     display: inline-block;
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
     margin-top: 98px;
 }
+
 h1 {
-    font-family:'Inter';
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 45px;
@@ -140,10 +160,12 @@ h1 {
     color: #717171;
     margin-bottom: 42px;
 }
+
 .color__h1 {
     color: #499A18;
 }
-.welcome__text{
+
+.welcome__text {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -152,7 +174,8 @@ h1 {
     color: #636060;
     margin-bottom: 48px;
 }
-.learn__more{
+
+.learn__more {
     display: block;
     padding: 11px 26px;
     height: 100%;
@@ -168,20 +191,23 @@ h1 {
     background-color: #EDF2EC;
     cursor: pointer;
 }
+
 .learn__more:hover {
     color: #FFFFFF;
     background-color: #E06733;
     transition: 0.5s;
 }
+
 /*-------------WELCOME-END-------------------------------------------- */
 /*-------------ABOUT-START-------------------------------------------- */
-.about {
-}
-.background__white{
+.about {}
+
+.background__white {
     margin: 0 calc(-50vw + 50%);
     background-color: #FFFFFF;
 }
-.h2_aboutUs{
+
+.h2_aboutUs {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 400;
@@ -190,46 +216,55 @@ h1 {
     color: #499A18;
     margin-bottom: 40px;
 }
-.text__aboutUs{
+
+.text__aboutUs {
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
-    line-height: calc(30 / 20 * 100%);;
+    line-height: calc(30 / 20 * 100%);
+    ;
     color: #636060;
 }
-.aboutUs__container{
+
+.aboutUs__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 96px 0px 95px 0px;
 }
-.text__information_aboutUs{
+
+.text__information_aboutUs {
     margin-right: 155px;
 }
+
 /*-------------ABOUT-END------------------------------------------ */
 /*-------------SERVICES-START----------------------------------------- */
 .service {
     margin-bottom: 68px;
 }
-.services__content_container{
+
+.services__content_container {
     display: flex;
     justify-content: start;
     align-items: center;
     margin: 38px 0px 78px 0px;
 }
+
 .h2__service {
-    font-family: "Inika"; 
+    font-family: "Inika";
     font-style: normal;
     font-size: 40px;
     line-height: calc(52 / 40 * 100%);
     margin-right: 140px;
     flex-basis: 308px;
 }
-.buttons__service{
+
+.buttons__service {
     display: inline-flex;
 }
-.orange_button__services{
+
+.orange_button__services {
     color: #E06733;
     border-radius: 5px;
     border: 1px solid #E06733;
@@ -243,26 +278,33 @@ h1 {
     margin: 0px 38px 0px 0px;
     cursor: pointer;
 }
-.orange_button__services:hover{
+
+.orange_button__services:hover {
     background-color: #E06733;
     color: #FFFFFF;
     transition: 0.5s;
 }
+
 .gardens {}
+
 .lawn {}
+
 .planting {}
 
-.services__sections_wrapper{
+.services__sections_wrapper {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: center;
 }
+
 .garden__care {}
+
 .gardens__service {}
+
 .services__card__img {}
 
-.text__services{
+.text__services {
     background-color: #EDF2EC;
     border: 1px solid #E3E1D5;
     border-radius: 0px 0px 20px 20px;
@@ -275,6 +317,7 @@ h1 {
     display: flex;
     margin-bottom: 52px;
 }
+
 .services__name {
     font-family: 'Inter';
     font-style: normal;
@@ -284,6 +327,7 @@ h1 {
     color: #E06733;
     padding: 10px 0px 12px 0px;
 }
+
 .text__card {
     background-color: #EDF2EC;
     font-family: 'Inter';
@@ -293,23 +337,29 @@ h1 {
     line-height: calc(20 / 16 *100%);
     color: #717171;
 }
+
 .planting__service {}
+
 .lawn__care {}
+
 .lawn__service {}
+
 /*-------------SERVICES-END-------------------------------------------- */
 /*-------------PRICES-START--------------------------------------- */
 .prices {}
 
-.prices__help_container{
+.prices__help_container {
     display: inline-flex;
     justify-content: space-between;
     align-items: flex-start;
 }
-.prices__container {    
+
+.prices__container {
     flex-direction: column;
     display: flex;
     align-items: flex-start;
 }
+
 .h2__prices {
     color: #000000;
     font-family: 'Inter';
@@ -319,6 +369,7 @@ h1 {
     line-height: calc(48 / 40 * 100%);
     margin: 40px 0px 58px 0px;
 }
+
 .buttons__container_prices {
     border: 1px solid #E3E1D5;
     border-radius: 20px;
@@ -326,22 +377,24 @@ h1 {
     margin-bottom: 130px;
     max-width: 330px;
 }
+
 .button__price_basics,
 .button__price_standard,
-.button__price_pro {
-}
+.button__price_pro {}
 
-.button__price_standard{
+.button__price_standard {
     margin: 32px 0px;
 }
-.buttons__font_prices{
-font-family: 'Inter';
+
+.buttons__font_prices {
+    color: #000000;
+    font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
     line-height: calc(20 / 20 * 100%);
-    color: #000000;
 }
+
 .link__basics,
 .link__standard,
 .link__pro {
@@ -353,12 +406,18 @@ font-family: 'Inter';
     align-items: center;
     justify-content: space-around;
 }
+
 .link__basics:hover,
 .link__standard:hover,
 .link__pro:hover {
     background: #D6E7D2;
     transition: 0.5s;
 }
+
+.pointer__prices:hover {
+    transform: rotate(180deg);
+}
+
 .help__container {
     display: flex;
     justify-content: end;
@@ -367,6 +426,7 @@ font-family: 'Inter';
     flex-basis: 452px;
     margin: 40px 0px;
 }
+
 .h2__help {
     font-family: 'Inter';
     font-style: normal;
@@ -376,9 +436,11 @@ font-family: 'Inter';
     color: #000000;
     text-align: right;
 }
+
 .h2__green_help {
     color: #499A18;
 }
+
 .button__help_contacts {
     font-family: 'Inika';
     font-style: normal;
@@ -388,133 +450,204 @@ font-family: 'Inter';
     text-align: center;
     color: #E06733;
     border: 1px solid #E06733;
-    border-radius: 5px;    
+    border-radius: 5px;
     background-color: #FFFFFF;
     padding: 10px 32px;
     cursor: pointer;
     margin: 40px 0 34px 0;
 }
+
 .button__help_contacts:hover {
     color: #FFFFFF;
     background-color: #E06733;
     transition: 0.5s;
 }
+
 .leafs__help {
     margin-right: -10px;
 }
+
 /*-------------PRICES-END--------------------------------------- */
 /*-------------CONTACTS-START--------------------------------------- */
 .contacts {
     display: flex;
     justify-content: space-between;
 }
-.woman__contacts{
-    margin: 48px 0px 0px 0px;
+
+.woman__contacts {
+    margin: 55px 0px 0px 0px;
 }
-.h2__contact{
+
+.h2__contact {
     font-family: 'Inika';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
     line-height: calc(52 / 40 * 100%);
     color: #499A18;
-    margin: 58px 0px 0px 40px;
+    margin: 60px 0px 0px 40px;
 }
-.content__contact {    
-    width: 450px;
-    height: 50px; 
-    background-color: #D6E7D2;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 0px;
+
+.content__contact {
+    margin: 147px 0px 0px 0px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: calc(40 / 20 * 100%);
     letter-spacing: 0.05em;
+}
+
+/*плавное открытие будет сделано в plants 3 (плавный скрол по странице реализован) city не скачет потому что макет кривой*/
+.close__style_contact {
+    width: 415px;
+    height: 50px;
+    background-color: #D6E7D2;
+    border-radius: 0px;
     color: #717171;
-    margin: 145px 0px 0px 0px;
+    list-style-image: url(../img/contact/accordion_btn.svg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    direction: rtl;
+    padding: 5px 35px 0px 0px;
 }
-.content__contact:hover{
-    background-color: #C1E698;
-    transition: 0.5s;
+
+.city__position {
+    padding-right: 330px;
 }
-.city__button {
+
+.cities__contact {
+    padding: 18px 40px 27px 40px;
+    background: #DCE9D9;
+    cursor: url(../img/contact/cursor.svg), pointer;
     display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    padding: 5px 35px 0px 20px;
+    flex-direction: column;
+}
+
+details[open]>summary {
+    background: #C1E698;
+    box-shadow: none;
+    list-style-image: url(../img/contact/drop_btn.svg);
+    cursor: url(../img/contact/cursor.svg), pointer;
+    direction: rtl;
+    border: 1px solid #D6E7D2;
+    border-radius: 0px;
+    height: 45px;
+}
+
+details[close]>summary {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.canandaigua__city,
+.ny__city,
+.yonkers__city,
+.sherrill__city:not(last-child) {
+    border-bottom: 1px solid #D9D9D9;
+    color: #499A18;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: calc(20 / 16 * 100%);
+    letter-spacing: 0.05em;
+    padding: 20px 0px 5px 0px;
+}
+
+.canandaigua__city:hover,
+.ny__city:hover,
+.yonkers__city:hover,
+.sherrill__city:hover {
+    border-bottom: 1px solid #717171;
+    transition: 0.5s;
     color: #717171;
 }
+
 /*-------------CONTACTS-END--------------------------------------- */
 /*-------------FOOTER-START--------------------------------------- */
-.footer {
-}
+.footer {}
+
 .footer__container {
     display: flex;
     justify-content: space-between;
-    height: 130px;    
+    height: 130px;
     align-content: center;
     flex-wrap: wrap;
 }
+
 .footer__data {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.year__footer{
+
+.year__footer {
     margin: 0px 20px;
 }
-.info__footer{
-}
+
 .github__autors {
     cursor: pointer;
     color: #000000;
 }
-.link__footer {    
-    margin: 15px 0px 0px 20px;
+
+.link__footer {
+    margin: 5px 0px 0px 20px;
     color: #000000;
     cursor: pointer;
 }
-.github__autors:hover,
+
+.github__autors:hover {
+    text-decoration: underline;
+}
+
 .link__footer:hover {
     transform: scale(1.2);
     transition: 0.5s;
 }
+
 .footer__item:not(:first-child) {
     margin: 0px 0px 0px 25px;
 }
+
 .social__list {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+
 }
+
 ._icon-inst {
     color: #000000;
     font-size: 30px;
 }
+
 ._icon-fb {
     color: #000000;
     font-size: 30px;
 }
+
 ._icon-twit {
     color: #000000;
     font-size: 25px;
 }
+
 ._icon-pin {
     color: #000000;
     font-size: 30px;
 }
-._icon-fb:hover{
+
+._icon-fb:hover {
     color: #3b5998;
 }
+
 ._icon-pin:hover {
     color: #bb1717;
 }
+
 ._icon-twit:hover {
     color: #00acee;
 }
+
 ._icon-inst:hover {
     color: #b932b9;
 }
+
 /*-------------FOOTER-END--------------------------------------- */
